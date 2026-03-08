@@ -1,6 +1,6 @@
 # Tugas Eliminasi Gauss
 
-## 1. Sistem Persamaan Linear (SPL) {#sistem-persamaan-linear-spl .unnumbered}
+## 1. Sistem Persamaan Linear (SPL) 
 
 $$\begin{aligned}
 x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \\
@@ -10,7 +10,7 @@ x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \\
 2x_1 + 2x_2 + 2x_3 + 2x_4 + x_5 &= 25
 \end{aligned}$$
 
-## 2. Matriks Augmented {#matriks-augmented .unnumbered}
+## 2. Matriks Augmented 
 
 $$\left[
 \begin{array}{ccccc|c}
@@ -22,9 +22,9 @@ $$\left[
 \end{array}
 \right]$$
 
-## 3. Eliminasi Gauss (OBE) {#eliminasi-gauss-obe .unnumbered}
+## 3. Eliminasi Gauss (OBE) 
 
-### Langkah 1 {#langkah-1 .unnumbered}
+### Langkah 1 
 
 Hilangkan elemen di bawah pivot pertama
 
@@ -47,7 +47,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 2 {#langkah-2 .unnumbered}
+### Langkah 2 
 
 Ubah pivot menjadi 1
 
@@ -70,7 +70,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 3 {#langkah-3 .unnumbered}
+### Langkah 3 
 
 Hilangkan elemen di atas pivot kelima
 
@@ -93,7 +93,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 4 {#langkah-4 .unnumbered}
+### Langkah 4 
 
 Hilangkan elemen di atas pivot keempat
 
@@ -115,7 +115,7 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 5 {#langkah-5 .unnumbered}
+### Langkah 5 
 
 Hilangkan elemen di atas pivot ketiga
 
@@ -136,13 +136,13 @@ $$\left[
 \end{array}
 \right]$$
 
-### Langkah 6 {#langkah-6 .unnumbered}
+### Langkah 6 
 
 Hilangkan elemen di atas pivot kedua
 
 $$R_1 = R_1 - R_2$$
 
-### Hasil Akhir {#hasil-akhir .unnumbered}
+### Hasil Akhir 
 
 $$\left[
 \begin{array}{ccccc|c}
