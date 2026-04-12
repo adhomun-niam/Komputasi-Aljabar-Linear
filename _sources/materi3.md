@@ -328,7 +328,8 @@ $$\left[
 
 Kita gunakan matriks koefisien:
 
-A = $$\left[
+A = 
+$$\left[
 \begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 \\
 2 & 1 & 1 & 1 & 1 \\
