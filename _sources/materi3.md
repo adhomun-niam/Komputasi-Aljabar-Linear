@@ -367,3 +367,26 @@ $$ \det(A) = 1 \times (-1) \times (-1) \times (-1) \times (-1) $$
 
 $$ \det(A) = 1 $$
 
+#### Adjoin Matriks
+
+Contoh Perhitungan (Beberapa Elemen)
+##### a. Elemen $C_{11}$
+
+Hilangkan baris 1 kolom 1:
+
+$$
+\begin{vmatrix}
+1 & 1 & 1 & 1 \\
+2 & 1 & 1 & 1 \\
+2 & 2 & 1 & 1 \\
+2 & 2 & 2 & 1
+\end{vmatrix}
+$$
+
+Hasil determinannya = 1
+
+Karena posisi (1,1):
+
+$$ \Downarrow $$
+
+$$ C_{11} = (+1)(1) = 1 $$
