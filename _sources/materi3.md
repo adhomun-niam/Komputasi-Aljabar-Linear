@@ -389,3 +389,69 @@ Karena posisi (1,1):
 $$ \Downarrow $$
 
 $$ C_{11} = (+1)(1) = 1 $$
+
+#### b. Elemen $C_{12}$
+
+Hilangkan baris 1 kolom 2:
+
+$$
+\begin{vmatrix}
+2 & 1 & 1 & 1 \\
+2 & 1 & 1 & 1 \\
+2 & 2 & 1 & 1 \\
+2 & 2 & 2 & 1
+\end{vmatrix}
+$$
+
+Determinannya = 0 (karena ada baris sama)
+
+$$ C_{12} = (-1)(0) = 0 $$
+
+#### Pola yang terjadi
+
+Karena matriks ini berbentuk segitiga, maka
+- Banyak minor menjadi 0
+- kofaktor membentuk pola sederhana
+
+#### Hasil Adjoin Matriks
+
+Hasil akhirnya:
+
+$$
+\text{adj}(A) =
+\begin{bmatrix}
+-1 & 1 & 0 & 0 & 0 \\
+2 & -1 & 1 & 0 & 0 \\
+0 & 2 & -1 & 1 & 0 \\
+0 & 0 & 2 & -1 & 1 \\
+0 & 0 & 0 & 2 & -1
+\end{bmatrix}
+$$
+
+(Pola ini muncul karena bentuk matriks yang bertingkat/segitiga).
+
+### Invers Matriks
+
+Rumus:
+
+$$ A^{-1} = \frac{1}{\det(A)} \cdot \text{adj}(A) $$
+
+Karena:
+
+$$ \det(A) = 1 $$
+
+maka:
+
+$$ A^{-1} = \text{adj}(A) $$
+
+Jadi, hasil invers:
+
+$$
+A^{-1} = \begin{bmatrix}
+-1 & 1 & 0 & 0 & 0 \\
+2 & -1 & 1 & 0 & 0 \\
+0 & 2 & -1 & 1 & 0 \\
+0 & 0 & 2 & -1 & 1 \\
+0 & 0 & 0 & 2 & -1
+\end{bmatrix}
+$$
