@@ -168,9 +168,9 @@ $$\left[
 ![Original image](https://cdn.mathpix.com/snip/images/WTpqR5aPXVTS8cBNsk0NRvljB53KMiftwlZNgFQKGhY.original.fullsize.png)
 
 
-### UTS
+## UTS
 
-#### 1. Sistem Persamaan Linear (SPL) 
+### 1. Sistem Persamaan Linear (SPL) 
 
 $$\begin{aligned}
 x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \\
@@ -180,7 +180,7 @@ x_1 + x_2 + x_3 + x_4 + x_5 &= 15 \\
 2x_1 + 2x_2 + 2x_3 + 2x_4 + x_5 &= 25
 \end{aligned}$$
 
-#### 2. Matriks Augmented 
+### 2. Matriks Augmented 
 
 $$\left[
 \begin{array}{ccccc|c}
@@ -192,9 +192,9 @@ $$\left[
 \end{array}
 \right]$$
 
-#### 3. Eliminasi Gauss (OBE) 
+### 3. Eliminasi Gauss (OBE) 
 
-##### Langkah 1 
+#### Langkah 1 
 
 Hilangkan elemen di bawah pivot pertama
 
@@ -217,7 +217,7 @@ $$\left[
 \end{array}
 \right]$$
 
-##### Langkah 2 
+#### Langkah 2 
 
 Ubah pivot menjadi 1
 
@@ -240,7 +240,7 @@ $$\left[
 \end{array}
 \right]$$
 
-##### Langkah 3 
+#### Langkah 3 
 
 Hilangkan elemen di atas pivot kelima
 
@@ -263,7 +263,7 @@ $$\left[
 \end{array}
 \right]$$
 
-##### Langkah 4 
+#### Langkah 4 
 
 Hilangkan elemen di atas pivot keempat
 
@@ -285,7 +285,7 @@ $$\left[
 \end{array}
 \right]$$
 
-##### Langkah 5 
+#### Langkah 5 
 
 Hilangkan elemen di atas pivot ketiga
 
@@ -306,13 +306,13 @@ $$\left[
 \end{array}
 \right]$$
 
-##### Langkah 6 
+#### Langkah 6 
 
 Hilangkan elemen di atas pivot kedua
 
 $$R_1 = R_1 - R_2$$
 
-##### Hasil Akhir 
+#### Hasil Akhir 
 
 $$\left[
 \begin{array}{ccccc|c}
@@ -324,7 +324,7 @@ $$\left[
 \end{array}
 \right]$$
 
-#### Determinan Matrix
+### Determinan Matrix $A$
 
 Kita gunakan matriks koefisien:
 
@@ -337,8 +337,6 @@ A = $$\left[
 2 & 2 & 2 & 2 & 1
 \end{array}
 \right]$$
-
-#### 1. Determinan Matriks $A$
 
 Gunakan eliminasi baris (tidak mengubah determinan jika hanya operasi $R_i - kR_j$).
 
@@ -367,10 +365,10 @@ $$ \det(A) = 1 \times (-1) \times (-1) \times (-1) \times (-1) $$
 
 $$ \det(A) = 1 $$
 
-#### Adjoin Matriks
+### Adjoin Matriks
 
 Contoh Perhitungan (Beberapa Elemen)
-##### a. Elemen $C_{11}$
+#### a. Elemen $C_{11}$
 
 Hilangkan baris 1 kolom 1:
 
