@@ -329,7 +329,7 @@ $$\left[
 Kita gunakan matriks koefisien:
 
 A = 
-$$\left[
+$\left[
 \begin{array}{ccccc|c}
 1 & 1 & 1 & 1 & 1 \\
 2 & 1 & 1 & 1 & 1 \\
@@ -337,7 +337,7 @@ $$\left[
 2 & 2 & 2 & 1 & 1 \\
 2 & 2 & 2 & 2 & 1
 \end{array}
-\right]$$
+\right]$
 
 Gunakan eliminasi baris (tidak mengubah determinan jika hanya operasi $R_i - kR_j$).
 
