@@ -512,6 +512,8 @@ $$
 \end{aligned}
 $$
 
+### B. Menghitung Invers dengan Matriks Adjoin
+
 #### 4. Matriks $$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
 
 Dari soal A.1, diketahui $\det(A) = -23$.
