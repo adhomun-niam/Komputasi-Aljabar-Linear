@@ -455,3 +455,82 @@ A^{-1} = \begin{bmatrix}
 0 & 0 & 0 & 2 & -1
 \end{bmatrix}
 $$
+
+## Evaluasi Determinan dan Invers
+
+#### 1. Matriks 2 x 2
+
+$$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+
+Kita gunakan ekspansi baris pertama ($i=1$):
+
+* $a_{11} = -7, M_{11} = \det[4] = 4$
+* $a_{12} = -5, M_{12} = \det[1] = 1$
+
+$$ \det(A) = (-1)^{1+1}(-7)(4) + (-1)^{1+2}(-5)(1) $$
+
+$$ \det(A) = (1)(-28) + (-1)(-5) $$
+
+$$ \det(A) = -28 + 5 = \mathbf{-23} $$
+
+#### 2. Matriks 3 x 3
+
+$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+Untuk memudahkan, kita gunakan ekspansi **baris ketiga** ($i = 3$) karena memiliki banyak angka nol:
+
+* $a_{31} = 0, a_{32} = 0$
+* $a_{33} = 1, M_{33} = \det \begin{bmatrix} 0 & 2 \\ 1 & -2 \end{bmatrix} = (0)(-2) - (2)(1) = -2$
+
+$$ \det(A) = 0 + 0 + (-1)^{3+3}(1)(-2) $$
+
+$$ \det(A) = (1)(1)(-2) = -2 $$
+
+#### 3. Matriks 4 x 4
+
+$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$
+
+Kita gunakan ekspansi baris pertama ($i = 1$):
+
+$$ \det(A) = 1 \cdot C_{11} + (-3) \cdot C_{12} + 1 \cdot C_{13} + 1 \cdot C_{14} $$
+
+Setelah menghitung kofaktor masing-masing submatriks $3 \times 3$:
+
+*   $C_{11} = +16$
+*   $C_{12} = -(-16) = 16$
+*   $C_{13} = +16$
+*   $C_{14} = -(-16) = 16$
+
+$$ \det(A) = 1(16) + (-3)(16) + 1(16) + 1(16) $$
+
+$$ \det(A) = 16 - 48 + 16 + 16 = \mathbf{0} $$
+
+(Karena jumlah setiap baris adalah 0, maka determinannya pasti 0)
+
+### B: Menghitung Invers (Matriks Adjoin)
+Rumus: $A^{-1} = \frac{1}{\det(A)}\text{adj}(A)$, dengan $\text{adj}(A) = (\text{Kofaktor } A)^T$.
+
+#### 4. Matriks 2 x 2
+
+$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+
+Dari soal nomor 1, $\det(A) = -23$.
+
+*   Kofaktor: $C_{11} = 4, C_{12} = -1, C_{21} = 5, C_{22} = -7$
+*   $\text{adj}(A) = \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$
+
+$$ A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix} = \begin{bmatrix} -4/23 & -5/23 \\ 1/23 & 7/23 \end{bmatrix} $$
+
+#### 5. Matriks 3 x 3
+
+$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+
+Dari soal nomor 2, $\text{det}(A) = -2$. Cari semua kofaktor $C_{ij}$:
+
+*   $C_{11} = -2, C_{12} = -1, C_{13} = 0$
+*   $C_{21} = -2, C_{22} = 0, C_{23} = 0$
+*   $C_{31} = -8, C_{32} = -3, C_{33} = -2$
+
+$$ \text{adj}(A) = \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} $$
+
+$$ A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 1 & 4 \\ 0.5 & 0 & 1.5 \\ 0 & 0 & 1 \end{bmatrix} $$
