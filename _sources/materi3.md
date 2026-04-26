@@ -462,7 +462,7 @@ $$
 
 Rumus yang digunakan: $\det(A) = \sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}$
 
-#### 1. Matriks $$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+#### 1. Matriks $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
 
 Menggunakan ekspansi baris pertama ($i=1$).
 
@@ -478,7 +478,7 @@ $$
 \end{aligned}
 $$
 
-#### 2. Matriks $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
+#### 2. Matriks $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
 
 Kita gunakan ekspansi baris ketiga ($i = 3$) karena memiliki dua angka nol.
 
@@ -494,7 +494,7 @@ $$
 \end{aligned}
 $$
 
-#### 3. Matriks $$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$$
+#### 3. Matriks $A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$
 
 Kita gunakan ekspansi baris pertama ($i = 1$).
 
@@ -514,7 +514,7 @@ $$
 
 ### B. Menghitung Invers dengan Matriks Adjoin
 
-#### 4. Matriks $$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+#### 4. Matriks $A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
 
 Dari soal A.1, diketahui $\det(A) = -23$.
 
@@ -535,7 +535,7 @@ $\text{adj } A = \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$
 
 $$A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix} = \begin{bmatrix} -\frac{4}{23} & -\frac{5}{23} \\ \frac{1}{23} & \frac{7}{23} \end{bmatrix}$$
 
-#### 5. Matriks $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
+#### 5. Matriks $A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
 
 Dari soal A.2, diketahui $\det(A) = -2$.
 
