@@ -458,79 +458,109 @@ $$
 
 ## Evaluasi Determinan dan Invers
 
-#### 1. Matriks 2 x 2
+### A. Menghitung Determinan Matriks
 
-$$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
+Rumus yang digunakan: $\det(A) = \sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}$
 
-Kita gunakan ekspansi baris pertama ($i=1$):
+#### 1. Matriks $$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
 
-* $a_{11} = -7, M_{11} = \det[4] = 4$
-* $a_{12} = -5, M_{12} = \det[1] = 1$
+Menggunakan ekspansi baris pertama ($i=1$).
 
-$$ \det(A) = (-1)^{1+1}(-7)(4) + (-1)^{1+2}(-5)(1) $$
+*   $a_{11} = -7$, Minor $M_{11} = \det[4] = 4$.
+*   $a_{12} = -5$, Minor $M_{12} = \det[1] = 1$.
 
-$$ \det(A) = (1)(-28) + (-1)(-5) $$
+$$
+\begin{aligned}
+\det(A) &= (-1)^{1+1} a_{11} M_{11} + (-1)^{1+2} a_{12} M_{12} \\
+&= (1)(-7)(4) + (-1)(-5)(1) \\
+&= -28 + 5 \\
+&= \mathbf{-23}
+\end{aligned}
+$$
 
-$$ \det(A) = -28 + 5 = \mathbf{-23} $$
+#### 2. Matriks $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 
-#### 2. Matriks 3 x 3
+Kita gunakan ekspansi baris ketiga ($i = 3$) karena memiliki dua angka nol.
 
-$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
+*   $a_{31} = 0$
+*   $a_{32} = 0$
+*   $a_{33} = 1$, Minor $M_{33} = \det \begin{bmatrix} 0 & 2 \\ 1 & -2 \end{bmatrix} = (0)(-2) - (2)(1) = -2$.
 
-Untuk memudahkan, kita gunakan ekspansi **baris ketiga** ($i = 3$) karena memiliki banyak angka nol:
+$$
+\begin{aligned}
+\det(A) &= (-1)^{3+3} a_{33} M_{33} \\
+&= (1)(1)(-2) \\
+&= -2
+\end{aligned}
+$$
 
-* $a_{31} = 0, a_{32} = 0$
-* $a_{33} = 1, M_{33} = \det \begin{bmatrix} 0 & 2 \\ 1 & -2 \end{bmatrix} = (0)(-2) - (2)(1) = -2$
+#### 3. Matriks $$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$$
 
-$$ \det(A) = 0 + 0 + (-1)^{3+3}(1)(-2) $$
+Kita gunakan ekspansi baris pertama ($i = 1$).
 
-$$ \det(A) = (1)(1)(-2) = -2 $$
+*   $a_{11} = 1, M_{11} = \det \begin{bmatrix} 1 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{bmatrix} = 1(9 - 1) - 1(-3 - 1) + 1(1 + 3) = 8 + 4 + 4 = 16.$
+*   $a_{12} = -3, M_{12} = \det \begin{bmatrix} -3 & 1 & 1 \\ 1 & -3 & 1 \\ 1 & 1 & -3 \end{bmatrix} = -3(9 - 1) - 1(-3 - 1) + 1(1 + 3) = -24 + 4 + 4 = -16.$
+*   $a_{13} = 1, M_{13} = \det \begin{bmatrix} -3 & 1 & 1 \\ 1 & 1 & 1 \\ 1 & 1 & -3 \end{bmatrix} = -3(-3 - 1) - 1(-3 - 1) + 1(1 - 1) = 12 + 4 + 0 = 16.$
+*   $a_{14} = 1, M_{14} = \det \begin{bmatrix} -3 & 1 & 1 \\ 1 & 1 & -3 \\ 1 & 1 & 1 \end{bmatrix} = -3(1 + 3) - 1(1 + 3) + 1(1 - 1) = -12 - 4 + 0 = -16.$
 
-#### 3. Matriks 4 x 4
+$$
+\begin{aligned}
+\det(A) &= (+1)(1)(16) + (-1)(-3)(-16) + (+1)(1)(16) + (-1)(1)(-16) \\
+&= 16 - 48 + 16 + 16 \\
+&= 48 - 48 \\
+&= 0
+\end{aligned}
+$$
 
-$A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$
+#### 4. Matriks $$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$$
 
-Kita gunakan ekspansi baris pertama ($i = 1$):
+Dari soal A.1, diketahui $\det(A) = -23$.
 
-$$ \det(A) = 1 \cdot C_{11} + (-3) \cdot C_{12} + 1 \cdot C_{13} + 1 \cdot C_{14} $$
+##### Langkah 1: Cari Matriks Kofaktor ($C$)
 
-Setelah menghitung kofaktor masing-masing submatriks $3 \times 3$:
+*   $C_{11} = (-1)^{1+1}(4) = 4$
+*   $C_{12} = (-1)^{1+2}(1) = -1$
+*   $C_{21} = (-1)^{2+1}(-5) = 5$
+*   $C_{22} = (-1)^{2+2}(-7) = -7$
 
-*   $C_{11} = +16$
-*   $C_{12} = -(-16) = 16$
-*   $C_{13} = +16$
-*   $C_{14} = -(-16) = 16$
+$C = \begin{bmatrix} 4 & -1 \\ 5 & -7 \end{bmatrix}$
 
-$$ \det(A) = 1(16) + (-3)(16) + 1(16) + 1(16) $$
+##### Langkah 2: Cari Adjoin ($\text{adj } A = C^T$)
 
-$$ \det(A) = 16 - 48 + 16 + 16 = \mathbf{0} $$
+$\text{adj } A = \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$
 
-(Karena jumlah setiap baris adalah 0, maka determinannya pasti 0)
+##### Langkah 3: Hitung Invers
 
-### B: Menghitung Invers (Matriks Adjoin)
-Rumus: $A^{-1} = \frac{1}{\det(A)}\text{adj}(A)$, dengan $\text{adj}(A) = (\text{Kofaktor } A)^T$.
+$$A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix} = \begin{bmatrix} -\frac{4}{23} & -\frac{5}{23} \\ \frac{1}{23} & \frac{7}{23} \end{bmatrix}$$
 
-#### 4. Matriks 2 x 2
+#### 5. Matriks $$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$$
 
-$A = \begin{bmatrix} -7 & -5 \\ 1 & 4 \end{bmatrix}$
+Dari soal A.2, diketahui $\det(A) = -2$.
 
-Dari soal nomor 1, $\det(A) = -23$.
+##### Langkah 1: Cari Matriks Minor ($M$)
 
-*   Kofaktor: $C_{11} = 4, C_{12} = -1, C_{21} = 5, C_{22} = -7$
-*   $\text{adj}(A) = \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix}$
+*   $M_{11} = -2, M_{12} = 1, M_{13} = 0$
+*   $M_{21} = 2, M_{22} = 0, M_{23} = 0$
+*   $M_{31} = -8, M_{32} = 3, M_{33} = -2$
 
-$$ A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 & 5 \\ -1 & -7 \end{bmatrix} = \begin{bmatrix} -4/23 & -5/23 \\ 1/23 & 7/23 \end{bmatrix} $$
-
-#### 5. Matriks 3 x 3
-
-$A = \begin{bmatrix} 0 & 2 & -3 \\ 1 & -2 & -1 \\ 0 & 0 & 1 \end{bmatrix}$
-
-Dari soal nomor 2, $\text{det}(A) = -2$. Cari semua kofaktor $C_{ij}$:
+##### Langkah 2: Cari Matriks Kofaktor ($C_{ij} = (-1)^{i+j}M_{ij}$)
 
 *   $C_{11} = -2, C_{12} = -1, C_{13} = 0$
 *   $C_{21} = -2, C_{22} = 0, C_{23} = 0$
 *   $C_{31} = -8, C_{32} = -3, C_{33} = -2$
 
-$$ \text{adj}(A) = \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} $$
+$$C = \begin{bmatrix} -2 & -1 & 0 \\ -2 & 0 & 0 \\ -8 & -3 & -2 \end{bmatrix}$$
 
-$$ A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 1 & 4 \\ 0.5 & 0 & 1.5 \\ 0 & 0 & 1 \end{bmatrix} $$
+##### Langkah 3: Cari Adjoin ($\text{adj } A = C^T$)
+
+$$\text{adj } A = \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix}$$
+
+##### Langkah 4: Hitung Invers
+
+$$A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -2 \end{bmatrix} = \begin{bmatrix} 1 & 1 & 4 \\ 0.5 & 0 & 1.5 \\ 0 & 0 & 1 \end{bmatrix}$$
+
+#### 6. Matriks $A = \begin{bmatrix} 1 & -3 & 1 & 1 \\ -3 & 1 & 1 & 1 \\ 1 & 1 & -3 & 1 \\ 1 & 1 & 1 & -3 \end{bmatrix}$
+
+Dari soal A.3, diketahui $\det(A) = 0$.
+
+Syarat agar matriks memiliki invers adalah $\det(A) \neq 0$. Karena determinan matriks = 0, maka matriks tersebut adalah **matriks singular** dan **tidak memiliki invers**.
