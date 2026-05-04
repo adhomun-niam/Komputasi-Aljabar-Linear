@@ -566,3 +566,4 @@ $$A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 & -2 & -8 \\ -1 & 0 & -3 \\ 0 & 0 & -
 Dari soal A.3, diketahui $\det(A) = 0$.
 
 Syarat agar matriks memiliki invers adalah $\det(A) \neq 0$. Karena determinan matriks = 0, maka matriks tersebut adalah **matriks singular** dan **tidak memiliki invers**.
+
