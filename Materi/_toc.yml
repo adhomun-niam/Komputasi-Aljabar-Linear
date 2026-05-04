@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+chapters:
+- file: materi1.md
+- file: materi2.md
+- file: materi3.md
+- file: tugas.md
+- file: Tugas2.md
+- file: Tugas3.md
